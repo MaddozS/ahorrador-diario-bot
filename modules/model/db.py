@@ -20,8 +20,6 @@ class DBInit():
   def get_database(self):
     return self.client[self.database_name]
 
-# client = MongoClient('mongodb+srv://admin:rZ5PlXCJuGkyw9i0@cluster0.8oilk.mongodb.net/ahorrador_diario?retryWrites=true&w=majority')
-
 database = DBInit(os.environ['username_db'], os.environ['password_db'], os.environ['name_db'])
 database.start_connection()
 
